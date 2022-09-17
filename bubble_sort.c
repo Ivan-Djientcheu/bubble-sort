@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-  int array[100], n, c, d, sort;
+  int array[100], n, c, d, sort; /*Deklaration der Variable*/
   printf("Geben Sie die Anzahl der zu klassierfierende Elemente an: \n");
   scanf("%d", &n);
 
   printf("Geben Sie %d integers ein: \n", n);
   
   for (c = 0; c < n; c++)
-    scanf("%d", &array[c]);
+    scanf("%d", &array[c]); /*Speicherung der verschiedenen Zahlen in dem Array */
   for (c = 0 ; c < n - 1; c++)
   {
      for (d = 0 ; d < n - c - 1; d++)
-	    {if (array[d] > array[d+1]) /* */
+	    {if (array[d] > array[d+1]) /*Sortierung in der Aufsteigender Reihenfolge */
 	        {
 		         sort       = array[d];
 		         array[d]   = array[d+1];
